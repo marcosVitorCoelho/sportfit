@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --background: #171717;
+  --text: #fafaf9;
+  --pink: #c21e6f;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+a {
+  color: var(--text);
+  cursor: pointer;
+}
+
+#header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 16px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.scrolled {
+  background-color: rgb(0 0 0 / 25%) !important;
+}
+
+#header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#header-logo-container h1 {
+  color: var(--text);
+}
+
+#header-logo-container span {
+  color: var(--pink);
+}
+
+#header-logo-container img {
+  width: 63px;
+  height: 63px;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  color: var(--text);
+}
+
+.sections {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--pink);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgba();
+}
+
+#section-container {
+  margin-top: 100px;
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-container:has(div) h1 {
+  color: var(--text);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#info-container {
+  width: 350px;
+}
+
+#section-container:has(div) p {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+#section-container:has() button {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+#key-directions-container {
+  margin-top: 100px;
+  width: 1060px;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+#key-directions-container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text);
+}
+#key-directions-container p {
+  color: var(--text);
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.5px; /* 134.091% */
+  letter-spacing: 0.5px;
+}
+
+#image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image-container ul {
+  text-align: justify;
+}
+
+#image-container li {
+  color: var(--text);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.5px; /* 134.091% */
+  letter-spacing: 0.5px;
+}
+
+#image-container ul li:before {
+  list-style: none;
+  content: url("./assets/Vector.svg"); /* Define a imagem como conteúdo antes do elemento <li> */
+}
+
+#footer {
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+}
+
+.flex-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex-footer:has(form) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#footer h2 {
+  color: rgba(255, 248, 248, 0.65);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+#footer p {
+  font-size: 14px;
+  color: rgba(255, 248, 248, 0.65);
+  line-height: 29.5px; /* 134.091% */
+  letter-spacing: 0.5px;
+}
+
+#email-input {
+  width: 100%;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--text);
+  padding: 8px;
+}
